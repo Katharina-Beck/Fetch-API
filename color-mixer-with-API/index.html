@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="output">
+    <header>
+        <div>
+            <label id="red">r
+                <input type="range" step="1" min="0" max="255" value="50">
+            </label>
+        </div>
+        <div>
+            <label id="green">g
+                <input type="range" step="1" min="0" max="255" value="50">
+            </label>
+        </div>
+        <div>
+            <label id="blue">b
+                <input type="range" step="1" min="0" max="255" value="50">
+            </label>
+        </div>
+
+        <p class="colorCode">#000000</p>
+
+    </header>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- Add a header with three sliders (input with type range) 
+The sliders will control the values for a rgb color (one slider for red, one slider for green, one slider for blue)
+Once a slider is moved the background color of the web app is updated
+Also show the color value in the header (can be in hex or as a rgb value like this rgb(xx,xx,xx))
+Load a default color an the beginning (i.e. hotpink or dodgerblue) -->
